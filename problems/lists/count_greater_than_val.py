@@ -7,7 +7,11 @@ def count_greater_than_val(lst, val):
     # Replace the following line with your code.
     # After running your code, variable n should contain the value
     # we ask you to compute in this exercise.
-    n = None
+    n = 0
+
+    for num in lst:
+        if num > val:
+            n += 1
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return n
