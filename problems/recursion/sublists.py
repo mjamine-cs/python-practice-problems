@@ -6,8 +6,14 @@ def sublists(lst):
     
     Returns: (list of list of values) list of all sublists of lst.
     """
+    if len(lst) == 0:
+        return [[]]
 
-    pass
+    tail = sublists(lst[1:])
+
+    result = [[lst[0]] + sublist for sublist in tail]
+
+    return tail + result
 
 
 #############################################################
