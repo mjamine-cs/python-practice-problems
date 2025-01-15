@@ -8,7 +8,12 @@ def number_string(x):
     # Replace the following line with your code.
     # After running your code, variable s should contain the value
     # we ask you to compute in this exercise.
-    s = None
+    if x < 0:
+        s = "NEGATIVE"
+    elif x > 0:
+        s = "POSITIVE"
+    else:
+        s = "ZERO"
 
     ### DO NOT MODIFY THE FOLLOWING LINE!
     return s
