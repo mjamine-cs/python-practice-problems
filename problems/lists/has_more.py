@@ -9,7 +9,18 @@ def has_more(lst1, lst2, target):
     """
 
     ### Replace pass with your code
-    pass
+    count1 = 0
+    count2 = 0
+
+    for num in lst1:
+        if num == target:
+            count1 += 1
+
+    for num in lst2:
+        if num == target:
+            count2 += 1
+
+    return count1 > count2
 
 
 #############################################################
