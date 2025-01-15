@@ -9,7 +9,15 @@ def rows_and_columns_contain(lst, target):
     """
 
     ### Replace pass with your code
-    pass
+    for row in lst:
+        if target not in row:
+            return False
+
+    for col_idx in range(len(lst[0])):
+        if target not in [row[col_idx] for row in lst]:
+            return False
+
+    return True
 
 
 #############################################################
